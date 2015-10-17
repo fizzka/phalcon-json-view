@@ -1,0 +1,17 @@
+{
+    "name": "convextra/helpers",
+    "description": "Set of helpful classes for convextra projects",
+    "authors": [
+        {
+            "name": "Ilya Bulah",
+            "email": "ilya.bulah@gmail.com"
+        }
+    ],
+    "license" : "MIT",
+
+    "autoload": {
+            "psr-4": {
+                    "Fizz\\Phalcon\\": "src/"
+            }
+    }
+}
