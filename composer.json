@@ -10,6 +10,7 @@
     "license" : "MIT",
 
     "require": {
+        "php" : "~5.4 | ~7.0",
         "ext-phalcon" : "~3.0"
     },
 

@@ -5,7 +5,6 @@ namespace Fizz\Phalcon\JsonView;
 use Phalcon\Mvc\User\Plugin;
 use Phalcon\Events\Event;
 use Phalcon\Mvc\Dispatcher;
-use Fizz\Phalcon\Filter\Unicode as FilterUnicode;
 
 class JsonView extends Plugin {
 	public function afterDispatchLoop(Event $event, Dispatcher $dispatcher) {
