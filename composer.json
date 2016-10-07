@@ -1,6 +1,6 @@
 {
-    "name": "convextra/helpers",
-    "description": "Set of helpful classes for convextra projects",
+    "name": "fizzka/phalcon-json-view",
+    "description": "Return phalcon controller response as JSON",
     "authors": [
         {
             "name": "Ilya Bulah",
@@ -9,9 +9,13 @@
     ],
     "license" : "MIT",
 
+    "require": {
+        "ext-phalcon" : "~3.0"
+    },
+
     "autoload": {
-            "psr-4": {
-                    "Fizz\\Phalcon\\": "src/"
-            }
+        "psr-4": {
+                "Fizz\\Phalcon\\": "src/"
+        }
     }
 }
