@@ -9,9 +9,10 @@ clone repo or `composer require fizzka/phalcon-json-view`
 ## Usage
 
 ### Step 1
-Customize your phalcon dispatcher:
+Customize your phalcon events manager:
 
 ```php
+use Fizz\Phalcon\JsonView\JsonView;
 use Phalcon\Mvc\Dispatcher;
 
 $di->set('dispatcher', function () use ($di) {
@@ -42,12 +43,12 @@ $di->set('view', function () {
 ```
 
 ### Step 3
-Extend abstract class Fizz\Phalcon\JsonController:
+Extend abstract class Fizz\Phalcon\JsonView\Controller;
 
 ```php
-use Fizz\Phalcon\JsonController;
+use Fizz\Phalcon\JsonView\Controller;
 
-class ExampleController extends JsonController
+class ExampleController extends Controller
 {
 	public function indexAction()
 	{
