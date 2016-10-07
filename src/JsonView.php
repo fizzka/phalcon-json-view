@@ -1,6 +1,6 @@
 <?php
 
-namespace Fizz\Phalcon;
+namespace Fizz\Phalcon\JsonView;
 
 use Phalcon\Mvc\User\Plugin;
 use Phalcon\Events\Event;

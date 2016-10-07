@@ -15,7 +15,7 @@
 
     "autoload": {
         "psr-4": {
-                "Fizz\\Phalcon\\": "src/"
+                "Fizz\\Phalcon\\JsonView\\": "src/"
         }
     }
 }

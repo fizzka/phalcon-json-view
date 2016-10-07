@@ -1,11 +1,11 @@
 <?php
 
-namespace Fizz\Phalcon;
+namespace Fizz\Phalcon\JsonView;
 
-use Phalcon\Mvc\Controller;
+use Phalcon\Mvc\Controller as PhalconController;
 use Phalcon\Mvc\Dispatcher;
 
-abstract class JsonController extends Controller
+abstract class Controller extends PhalconController
 {
     public function afterExecuteRoute(Dispatcher $dispatcher)
     {

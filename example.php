@@ -1,7 +1,8 @@
 <?php
 
-use Fizz\Phalcon\JsonController;
-use Fizz\Phalcon\JsonView;
+use Fizz\Phalcon\JsonView\JsonView;
+use Fizz\Phalcon\JsonView\Controller;
+
 use Phalcon\Mvc\Dispatcher;
 use Phalcon\Mvc\View;
 
@@ -34,7 +35,7 @@ $di->set('view', function () {
 }, true);
 
 # Step 3
-class ExampleController extends JsonController
+class ExampleController extends Controller
 {
 	public function indexAction()
 	{
