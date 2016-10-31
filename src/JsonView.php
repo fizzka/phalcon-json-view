@@ -9,7 +9,8 @@ use Phalcon\Mvc\Dispatcher;
 class JsonView extends Plugin {
 	public function afterDispatchLoop(Event $event, Dispatcher $dispatcher) {
 		$data = $dispatcher->getReturnedValue();
-		if (is_array($data)) {
+
+		if (!is_scalar($data)) {
 			$data = json_encode($data, $this->getJsonOptions($dispatcher->getParam('pretty')));
 		}
 
