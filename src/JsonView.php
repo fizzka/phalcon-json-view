@@ -8,6 +8,10 @@ use Phalcon\Mvc\Dispatcher;
 
 class JsonView extends Plugin {
 	public function afterDispatchLoop(Event $event, Dispatcher $dispatcher) {
+		if  (!$dispatcher->getDI()->get('view')->isDisabled()) {
+			return;
+		}
+
 		$data = $dispatcher->getReturnedValue();
 
 		if (!is_scalar($data)) {
