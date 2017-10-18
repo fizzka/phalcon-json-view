@@ -37,10 +37,10 @@ $di->set('view', function () {
 # Step 3
 class ExampleController extends Controller
 {
-	public function indexAction()
-	{
-		return ['foo' => 'baz'];
-	}
+    public function indexAction()
+    {
+        return ['foo' => 'baz'];
+    }
 }
 
 $app = new PhalconApp($di);
